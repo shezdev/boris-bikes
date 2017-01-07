@@ -11,7 +11,7 @@ describe DockingStation do
 #end
 
 #2. Rewritten using Rspec one liner syntax
-it { is_expected.to respond_to :release_bike }
+it { is_expected.to respond_to :release_bike? }
 
 
 
