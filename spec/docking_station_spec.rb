@@ -13,6 +13,18 @@ describe DockingStation do
 #2. Rewritten using Rspec one liner syntax
 it { is_expected.to respond_to :release_bike? }
 
+#3. Second Test to see if the DockingStation can release working bikes
+it 'releases working bikes' do
+  bike = subject.release_bike?
+  expect(bike).to be_working
+end
+
+
+
+
+
+
+
 
 
 end
